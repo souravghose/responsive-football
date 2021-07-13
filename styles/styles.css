@@ -1,0 +1,54 @@
+/* google poppins fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+/* common utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* -------------
+ banner started 
+----------------*/
+.banner{
+    background:#2D25A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 67px;
+    padding-bottom: 86px;
+    padding-left: 156px;
+    padding-right: 141px;
+}
+.banner .banner-info{
+    width: 485px;
+    margin-right: 101px;
+}
+.banner .banner-info .banner-title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+.banner .banner-info .watch-live-button{
+    font-size: 16px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    text-decoration: none;
+    transition: all linear 0.5s;
+}
+.banner .banner-info .watch-live-button:hover{
+   background-color: #ffffff;
+   color: #E02C6D;
+}
+.banner .banner-image img{
+    width: 556.01px;
+    height: 438px;
+    transition: transform linear 0.5s;
+}
+.banner .banner-image img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
