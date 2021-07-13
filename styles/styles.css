@@ -1,37 +1,45 @@
 /* google poppins fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
 /* common utilities */
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 /* -------------
  banner started 
 ----------------*/
-.banner{
-    background:#2D25A0;
+
+.banner {
+    background: #2D25A0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 67px;
-    padding-bottom: 86px;
-    padding-left: 156px;
-    padding-right: 141px;
+    padding: 67px 141px 86px 156px;
+    margin-bottom: 70px;
 }
-.banner .banner-info{
+
+.banner .banner-info {
     width: 485px;
     margin-right: 101px;
 }
-.banner .banner-info .banner-title{
+
+.banner .banner-info .banner-title {
     font-size: 64px;
     font-weight: 700;
     line-height: 80px;
     color: #FFFFFF;
     margin-bottom: 27px;
 }
-.banner .banner-info .watch-live-button{
+
+.banner .banner-info .watch-live-button {
     font-size: 16px;
     background-color: #E02C6D;
     color: #FFFFFF;
@@ -39,16 +47,122 @@ body{
     text-decoration: none;
     transition: all linear 0.5s;
 }
-.banner .banner-info .watch-live-button:hover{
-   background-color: #ffffff;
-   color: #E02C6D;
+
+.banner .banner-info .watch-live-button:hover {
+    background-color: #ffffff;
+    color: #E02C6D;
 }
-.banner .banner-image img{
+
+.banner .banner-image img {
     width: 556.01px;
     height: 438px;
     transition: transform linear 0.5s;
 }
-.banner .banner-image img:hover{
+
+.banner .banner-image img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
+
+/* -------------
+    banner end 
+----------------*/
+
+/* --------------
+    player start 
+-----------------*/
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-bottom: 165px;
+}
+
+.player {
+    width: 330px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 45px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player .player-image img {
+    width: 300px;
+    height: 256px;
+}
+
+.player .player-info {
+    width: 300px;
+    margin-top: 16px;
+}
+
+.player .player-info .player-name {
+    color: #18191F;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.player .player-info .about-player {
+    color: #6C6C6C;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+/* --------------
+    player end 
+-----------------*/
+
+/* --------------
+    footer start 
+-----------------*/
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 63px;
+}
+
+.footer-content .footer-logo img {
+    width: 483.87px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+
+.social-media-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-media-account .social {
+    color: #969BAB;
+    background-color: rgba(150, 155, 171, 0.294);
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 21px;
+}
+
+.footer-text p {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* --------------
+    footer end 
+-----------------*/
